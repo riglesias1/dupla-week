@@ -22,18 +22,18 @@ const Featured = ({ minHeight = false }) => {
       <SectionTitle title="Featured" />
       <div className="featured-wrapper">
         <div className="featured-left">
-          <span>90's Telephone</span>
+          <span>Flybondi</span>
           <img
-            src="https://images.pexels.com/photos/2587464/pexels-photo-2587464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="Photo of Woman in Denim Jacket Holding Red Telephone"
+            src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=flybondi.jpg&download=1"
+            alt="Flybondi Argentina"
           />
           <span className="left-shutter" ref={featuredLeftShutter}></span>
         </div>
         <div className="featured-right">
-          <span>90's Cassette Player</span>
+          <span>Lo aprendí en TikTok</span>
           <img
-            src="https://images.pexels.com/photos/6076410/pexels-photo-6076410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="Women Sitting Together on the Floor"
+            src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=abuela.jpg&download=1"
+            alt="Abuela siendo DJ"
           />
           <span className="right-shutter" ref={featuredRightShutter}></span>
         </div>

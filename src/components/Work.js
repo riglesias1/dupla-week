@@ -4,27 +4,27 @@ import WorkItem from "./WorkItem";
 const images = [
   {
     id: 1,
-    src: "https://images.pexels.com/photos/4842487/pexels-photo-4842487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Arcade playtime for 90's kids",
-    category: "Arcade Games",
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=maradona.jpg&download=1",
+    title: "Mil vidas - TyC Sports",
+    category: "Records",
   },
   {
     id: 2,
-    src: "https://images.pexels.com/photos/3356608/pexels-photo-3356608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "No signal - no transmission",
-    category: "TV",
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=messi.jpg&download=1",
+    title: "Messi - chicos.net",
+    category: "TV Shows",
   },
   {
     id: 3,
-    src: "https://images.pexels.com/photos/12668238/pexels-photo-12668238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Retro Closures",
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=abuela.jpg&download=1",
+    title: "Lo aprendí en TikTok",
     category: "Boombox",
   },
   {
     id: 4,
-    src: "https://images.pexels.com/photos/12204293/pexels-photo-12204293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Vinyl Loveless Happiness",
-    category: "Vinyl Record",
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=flybondi.jpg&download=1",
+    title: "Flybondi Argentina",
+    category: "Records",
   },
 ];
 
