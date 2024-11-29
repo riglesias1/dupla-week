@@ -77,7 +77,7 @@ export const useGsapShutterUnveil = (item, delay = 0, trig = null) => {
     gsap.fromTo(
       el,
       {
-        height: "121%",
+        height: "144%",
         marginLeft: "-2.12%",
       },
       {

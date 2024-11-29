@@ -28,13 +28,19 @@ const Hero = () => {
     <section className="hero wrapper" ref={heroRef}>
       <ul className="links">
         <li ref={li1}>
-          <Link to="work">Work</Link>
+          <div class="scaleup">
+            <Link to="work">Work</Link>
+          </div>
         </li>
         <li ref={li2}>
-          <Link to="about">About</Link>
+          <div class="scaleup">
+            <Link to="about">About</Link>
+          </div>
         </li>
         <li ref={li3}>
-          <Link to="contact">Contact</Link>
+          <div class="scaleup">
+            <Link to="contact">Contact</Link>
+          </div>
         </li>
       </ul>
       <h1 className="title">

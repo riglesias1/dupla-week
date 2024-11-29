@@ -64,7 +64,7 @@ const Hero = () => {
           <a href="mailto:ditulliojulian@gmail.com">
             ditulliojulian@gmail.com
           </a>
-          <div className="connect-linkedin">
+          <div className="connect-linkedin scaleup">
             <a href="https://project-oja50igx3huodeiszeon.framercanvas.com/s/app.6f76210c9f26655dbc7768371288eadb41794908" target="_blank">
               LinkedIn
             </a>
@@ -74,7 +74,7 @@ const Hero = () => {
           <a href="mailto:tristanoshea@gmail.com">
             tristanoshea@gmail.com
           </a>
-          <div className="connect-linkedin">
+          <div className="connect-linkedin scaleup">
             <a href="https://twitter.com/CristianMielu" target="_blank">
               LinkedIn
             </a>
