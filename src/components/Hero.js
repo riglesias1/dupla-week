@@ -13,16 +13,16 @@ const Hero = () => {
   const li3 = useRef(null);
   const shutter1 = useRef(null);
   const shutter2 = useRef(null);
-  const andperatorRef = useRef(null);
-  const trademarkRef = useRef(null);
+  const shutter3 = useRef(null);
+  const shutter4 = useRef(null);
 
   const liArr = [li1, li2, li3];
 
   useGsapDownStagger(liArr, 1.5);
   useGsapShutterUnveil(shutter1, 0, heroRef);
-  useGsapShutterUnveil(shutter2, 0.3, heroRef);
-  useGsapAppear(andperatorRef, 1.2, heroRef);
-  useGsapAppear(trademarkRef, 1.2, heroRef);
+  useGsapShutterUnveil(shutter2, 0.15, heroRef);
+  useGsapShutterUnveil(shutter3, 0.3, heroRef);
+  useGsapShutterUnveil(shutter4, 0.45, heroRef);
 
   return (
     <section className="hero wrapper" ref={heroRef}>
@@ -41,14 +41,14 @@ const Hero = () => {
         <span className="ethereal">
           Tristán<span ref={shutter1}></span>
         </span>
-        <span className="andperator" ref={andperatorRef}>
-          &
+        <span className="andperator">
+          &<span ref={shutter2}></span>
         </span>
         <span className="canvas">
-          Julian<span ref={shutter2}></span>
+          Julian<span ref={shutter3}></span>
         </span>
-        <span className="trademark" ref={trademarkRef}>
-          ®
+        <span className="trademark">
+          ®<span ref={shutter4}></span>
         </span>
       </h1>
     </section>

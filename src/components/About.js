@@ -1,7 +1,9 @@
 import SectionTitle from "./SectionTitle";
+import Footer from "./Footer";
 
 const About = ({ minHeight }) => {
   return (
+    <>
     <section
       className="about wrapper"
       style={minHeight ? { minHeight: "100vh" } : null}
@@ -20,6 +22,8 @@ const About = ({ minHeight }) => {
         dui interdum ipsum, et interdum velit felis a magna.
       </p>
     </section>
+      <Footer />
+    </>
   );
 };
 

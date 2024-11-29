@@ -1,45 +1,102 @@
 import { useRef } from "react";
+import { Link } from 'react-router-dom'
 import {
-  useGsapContactLeftShutter,
-  useGsapContactRightShutter,
+  useGsapDownStagger,
+  useGsapAppear
 } from "../hooks/gsap";
-import SectionTitle from "./SectionTitle";
 
-const Contact = ({ minHeight = false }) => {
-  const contactRef = useRef(null);
-  const contactLeftShutter = useRef(null);
-  const contactRightShutter = useRef(null);
+const Hero = () => {
+  const heroRef = useRef(null);
+  const li1 = useRef(null);
+  const li2 = useRef(null);
+  const li3 = useRef(null);
+  const shutter1 = useRef(null);
+  const shutter2 = useRef(null);
+  const shutter3 = useRef(null);
+  const shutter4 = useRef(null);
 
-  useGsapContactLeftShutter(contactLeftShutter, contactRef);
-  useGsapContactRightShutter(contactRightShutter, contactRef);
+  const liArr = [li1, li2, li3];
+
+  useGsapDownStagger(liArr, 1.5);
+  useGsapAppear(shutter1, 0, heroRef);
+  useGsapAppear(shutter2, 0.15, heroRef);
+  useGsapAppear(shutter3, 0.3, heroRef);
+  useGsapAppear(shutter4, 0.45, heroRef);
+
+  const style = `
+    body {
+      background-color: black;
+      transition: background-color 0.5s;
+    }
+    .home-link {
+      color: white;
+    }
+  `
 
   return (
-    <section
-      className="contact wrapper"
-      ref={contactRef}
-      style={minHeight ? { minHeight: "100vh" } : null}
-    >
-      <SectionTitle title="Contact" />
-      <div className="contact-wrapper">
-        <div className="contact-left">
-          <span>Flybondi</span>
-          <img
-            src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=flybondi.jpg&download=1"
-            alt="Flybondi Argentina"
-          />
-          <span className="left-shutter" ref={contactLeftShutter}></span>
-        </div>
-        <div className="contact-right">
-          <span>Lo aprendí en TikTok</span>
-          <img
-            src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=abuela.jpg&download=1"
-            alt="Abuela siendo DJ"
-          />
-          <span className="right-shutter" ref={contactRightShutter}></span>
-        </div>
-      </div>
+    <section className="hero wrapper" ref={heroRef}>
+      <style>{style}</style>
+      {/*
+      idea instead of links:
+      (LET'S CONNECT)
+
+      ditulliojulian@gmail.com
+      +1 999 888 777
+      LINKEDIN (TRISTÁN)
+      LINKDIN (JULIÁN)
+      */}
+      {/* <ul className="links">
+        <li ref={li1}>
+          <Link to="work">Work</Link>
+        </li>
+        <li ref={li2}>
+          <Link to="about">About</Link>
+        </li>
+        <li ref={li3}>
+          <Link to="contact">Contact</Link>
+        </li>
+      </ul> */}
+      <ul className="connect-links">
+        <li ref={li1}>
+          <h2>(LET'S CONNECT)</h2>
+        </li>
+        <li ref={li2}>
+          <a href="mailto:ditulliojulian@gmail.com">
+            ditulliojulian@gmail.com
+          </a>
+          <div className="connect-linkedin">
+            <a href="https://project-oja50igx3huodeiszeon.framercanvas.com/s/app.6f76210c9f26655dbc7768371288eadb41794908" target="_blank">
+              LinkedIn
+            </a>
+          </div>
+        </li>
+        <li ref={li3}>
+          <a href="mailto:tristanoshea@gmail.com">
+            tristanoshea@gmail.com
+          </a>
+          <div className="connect-linkedin">
+            <a href="https://twitter.com/CristianMielu" target="_blank">
+              LinkedIn
+            </a>
+          </div>
+        </li>
+      </ul>
+      <h1 className="title">
+        <span className="ethereal" ref={shutter1}>
+          Tristán
+        </span>
+        <span className="andperator" ref={shutter3}>
+          &
+        </span>
+        <span className="canvas" ref={shutter2}>
+          Julian
+        </span>
+        <span className="trademark" ref={shutter4}>
+          ®
+        </span>
+      </h1>
     </section>
   );
 };
 
-export default Contact;
+export default Hero;

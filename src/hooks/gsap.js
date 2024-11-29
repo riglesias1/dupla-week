@@ -70,7 +70,7 @@ export const useGsapAppear = (item, delay = 0, trig) => {
   }, []);
 }
 
-export const useGsapShutterUnveil = (item, delay = 0, trig) => {
+export const useGsapShutterUnveil = (item, delay = 0, trig = null) => {
   useEffect(() => {
     const el = item.current;
 
@@ -78,7 +78,7 @@ export const useGsapShutterUnveil = (item, delay = 0, trig) => {
       el,
       {
         height: "121%",
-        marginLeft: "-2.2%",
+        marginLeft: "-2.12%",
       },
       {
         height: 0,
@@ -86,7 +86,7 @@ export const useGsapShutterUnveil = (item, delay = 0, trig) => {
         delay: delay,
         ease: Expo.easeInOut,
         scrollTrigger: {
-          trigger: trig.current,
+          trigger: trig?.current,
           toggleActions: "play reverse play reverse",
         },
       }

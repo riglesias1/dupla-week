@@ -53,7 +53,9 @@ section {
 
 .section-title {
   font-family: "Syncopate", sans-serif;
-  font-size: 1.5rem;
+  font-size: 4rem;
+  margin-top: -10vw;
+  text-align: center;
   text-transform: lowercase;
   padding-bottom: 5vw;
   color: var(--color-primary);
@@ -97,6 +99,7 @@ section {
   font-size: 5rem;
   letter-spacing: 0;
   line-height: 1;
+  padding-bottom: 14rem;
 }
 
 .links a {
@@ -134,7 +137,7 @@ section {
   font-size: 8vw;
   line-height: 0.8;
   color: var(--text-dark);
-  min-height: calc(100vh - 9vw);
+  min-height: calc(100vh - 10vw);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -147,7 +150,7 @@ section {
   text-transform: lowercase;
   text-align: center;
   width: 100%;
-  font-size: 1.399em;
+  font-size: 1.37em;
   font-weight: 700;
   color: var(--color-primary);
 }
@@ -164,6 +167,8 @@ section {
 }
 
 .ethereal span,
+.andperator span,
+.trademark span,
 .canvas span {
   position: absolute;
   top: -23%;
@@ -180,6 +185,67 @@ section {
   z-index: 2;
 }
 
+.connect-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 1;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+  h2 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  a,
+  .connect-linkedin {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    transition: 0.3s;
+  }
+
+  .connect-linkedin:hover {
+    transform: scale(1.2);
+  }
+
+  .connect-linkedin {
+    width: fit-content;
+    position: relative;
+
+    a:hover {
+      color: black;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    a::before {
+      content: "";
+      width: 0%;
+      height: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--color-primary);
+      transition: 0.4s;
+    }
+
+    a:hover::before {
+      width: 110%;
+      z-index: -1;
+    }
+  }
+}
 .contact-wrapper {
   display: grid;
   grid-template-columns: 30% auto;

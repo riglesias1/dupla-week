@@ -28,7 +28,7 @@ const images = [
   },
 ];
 
-const Work = () => {
+const ResumeWork = () => {
   return (
     <section className="work">
       <div className="work-wrapper">
@@ -40,4 +40,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default ResumeWork;

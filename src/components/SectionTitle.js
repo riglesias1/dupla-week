@@ -11,7 +11,7 @@ const SectionTitle = ({ title, needMargin = false }) => {
   };
 
   return (
-    <h6 id={title.toLocaleLowerCase()} className="section-title" style={optionalMarginStyles} ref={secTitle}>
+    <h6 className="section-title" style={optionalMarginStyles} ref={secTitle}>
       {title}
     </h6>
   );
