@@ -141,7 +141,7 @@ section {
   font-size: 8vw;
   line-height: 0.8;
   color: var(--text-dark);
-  min-height: calc(100vh - 10vw);
+  min-height: calc(100svh - 6.4svh);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
