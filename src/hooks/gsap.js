@@ -47,7 +47,7 @@ export const useGsapUpward = (item, delay = 0) => {
   }, []);
 };
 
-export const useGsapAppear = (item, delay = 0) => {
+export const useGsapAppear = (item, delay = 0, trig) => {
   useEffect(() => {
     const el = item.current;
 
@@ -61,6 +61,10 @@ export const useGsapAppear = (item, delay = 0) => {
         duration: 1,
         delay: delay,
         ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          toggleActions: "play reverse play reverse",
+        },
       }
     );
   }, []);
@@ -74,6 +78,7 @@ export const useGsapShutterUnveil = (item, delay = 0, trig) => {
       el,
       {
         height: "121%",
+        marginLeft: "-2.2%",
       },
       {
         height: 0,
@@ -111,7 +116,7 @@ export const useGsapLeftWalking = (item) => {
   }, []);
 };
 
-export const useGsapFeaturedLeftShutter = (item, trig) => {
+export const useGsapContactLeftShutter = (item, trig) => {
   useEffect(() => {
     const el = item.current;
 
@@ -135,7 +140,7 @@ export const useGsapFeaturedLeftShutter = (item, trig) => {
   }, []);
 };
 
-export const useGsapFeaturedRightShutter = (item, trig) => {
+export const useGsapContactRightShutter = (item, trig) => {
   useEffect(() => {
     const el = item.current;
 

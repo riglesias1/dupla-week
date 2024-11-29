@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import Featured from "./Featured";
+import Contact from "./Contact";
 import About from "./About";
 import Work from "./Work";
 
@@ -7,9 +7,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Featured />
       <Work />
-      <About />
     </>
   );
 };

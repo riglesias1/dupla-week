@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800;900&display=swap");
@@ -27,14 +27,12 @@ body {
   overflow-x: hidden;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+    font-size: 2rem;
   line-height: 1.7;
   letter-spacing: 1px;
   background-color: var(--color-lighter);
@@ -71,41 +69,46 @@ section {
   text-transform: lowercase;
 }
 
-.links{
+.home-link {
+  color: var(--text-darker);
   font-family: "Bai Jamjuree", sans-serif;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
+  text-align: right;
+  font-size: 2rem;
   letter-spacing: 0;
   line-height: 1;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+
+    &:hover {
+      font-weight: 600;
+      transition: 0.3s;
+    }
+  }
 }
 
-
-.favourite-link {
+.links {
   font-family: "Bai Jamjuree", sans-serif;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: 500;
+  font-size: 5rem;
   letter-spacing: 0;
   line-height: 1;
 }
 
 .links a {
-  font-size: 5rem;
-}
-
-.links a{
   color: var(--text-dark);
-  position: relative;
 }
 
-.favourite-link a {
-  color: var(--text-darker);
-  position: relative;
-}
 
 .links a:hover {
   color: var(--color-lighter);
-  transition: 0.4s;
+  font-weight: 900;
+    font-size: 5.5rem;
+    transition: 0.2s;
 }
 
 .links a::before {
@@ -120,50 +123,44 @@ section {
   transition: 0.4s;
 }
 
-.links a:hover::before,
-.favourite-link a:hover::before {
+.links a:hover::before {
   width: 110%;
   z-index: -1;
-}
-
-.logo a {
-  color: inherit;
 }
 
 .hero {
   font-family: "Bai Jamjuree", sans-serif;
   text-transform: uppercase;
   font-size: 8vw;
-  text-align: center;
   line-height: 0.8;
   color: var(--text-dark);
-  min-height: calc(100vh - 25vw);
+  min-height: calc(100vh - 9vw);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+    align-items: flex-start;
   position: relative;
 }
 
+.title {
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  width: 100%;
+  font-size: 1.399em;
+  font-weight: 700;
+  color: var(--color-primary);
+}
 .ethereal {
-  position: relative;
-  margin-right: 10vw;
   z-index: 2;
 }
 
+.ethereal,
+.andperator,
+.trademark,
 .canvas {
   position: relative;
-  margin-left: 10vw;
-}
-
-.andperator {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 10vw;
-  color: var(--color-light);
-  z-index: 2;
+  display: inline;
 }
 
 .ethereal span,
@@ -183,71 +180,25 @@ section {
   z-index: 2;
 }
 
-.photos {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
-
-.photo {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.photo.one {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.photo.two {
-  grid-column: 4;
-  grid-row: 3;
-}
-
-.photo.three {
-  grid-column: 2;
-  grid-row: 5;
-}
-
-.photo.four {
-  grid-column: 7;
-  grid-row: 4;
-}
-
-.photo.five {
-  grid-column: 5;
-  grid-row: 1;
-}
-
-.featured-wrapper {
+.contact-wrapper {
   display: grid;
   grid-template-columns: 30% auto;
   align-items: center;
   gap: 10rem;
 }
 
-.featured-wrapper span {
+.contact-wrapper span {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 5px;
 }
 
-.featured-wrapper img {
+.contact-wrapper img {
   width: 100%;
   display: block;
 }
 
-.featured-left {
+.contact-left {
   display: grid;
   gap: 1rem;
   position: relative;
@@ -265,7 +216,7 @@ section {
   background-color: var(--color-lighter);
 }
 
-.featured-right {
+.contact-right {
   display: grid;
   gap: 1rem;
   position: relative;
@@ -290,6 +241,10 @@ section {
 
 .about p:last-child {
   margin-top: 3vw;
+}
+
+.work {
+  padding-bottom: 0;
 }
 
 .work-wrapper {
@@ -494,7 +449,7 @@ section {
     order: -1;
   }
 
-  .featured-wrapper {
+    .contact-wrapper {
     grid-template-columns: 1fr;
     gap: 5rem;
   }

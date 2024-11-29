@@ -24,13 +24,13 @@ const Navbar = () => {
         </div>
         <ul className="links">
           <li className="link" ref={li1}>
-            <Link to="/featured">Featured</Link>
-          </li>
-          <li className="link" ref={li2}>
             <Link to="/work">Work</Link>
           </li>
-          <li className="link" ref={li3}>
+          <li className="link" ref={li2}>
             <Link to="/about">About</Link>
+          </li>
+          <li className="link" ref={li3}>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         

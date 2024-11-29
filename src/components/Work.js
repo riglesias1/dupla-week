@@ -31,7 +31,6 @@ const images = [
 const Work = () => {
   return (
     <section className="work">
-      <SectionTitle title="Work" needMargin={true} />
       <div className="work-wrapper">
         {images.map((image) => (
           <WorkItem key={image.id} {...image} />
