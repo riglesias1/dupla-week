@@ -1,6 +1,6 @@
-import SectionTitle from "./SectionTitle";
-import Blog from "./Blog";
-import { blogsArr } from "../data/blogs";
+import SectionTitle from "../SectionTitle";
+import Blog from "../Blog";
+import { blogsArr } from "./blogs";
 
 const Favourites = ({ minHeight }) => {
   return (
@@ -8,7 +8,7 @@ const Favourites = ({ minHeight }) => {
       className="favourites wrapper"
       style={minHeight ? { minHeight: "100vh" } : null}
     >
-      <SectionTitle title="Favourites" />
+      <SectionTitle title="Example Work" />
       <div className="blogs">
         {blogsArr.map((blog) => (
           <Blog key={blog.id} blog={blog} />

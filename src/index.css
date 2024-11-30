@@ -53,9 +53,10 @@ section {
 }
 
 .section-title {
-  font-family: "Syncopate", sans-serif;
-  font-size: 4rem;
-  margin-top: -10vw;
+  font-family: "Montserrat", sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: -12vw;
   text-align: center;
   text-transform: lowercase;
   padding-bottom: 5vw;
@@ -141,7 +142,7 @@ section {
   font-size: 8vw;
   line-height: 0.8;
   color: var(--text-dark);
-  min-height: calc(100svh - 6.4svh);
+  min-height: calc(100svh - 13.3svh);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,6 +168,7 @@ section {
 .trademark {
   font-size: 0.5em;
 }
+
 .ethereal,
 .andperator,
 .trademark,
@@ -203,8 +205,10 @@ section {
 
   li {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 1rem;
   }
 
 
@@ -364,6 +368,24 @@ section {
   height: 90vh;
 }
 
+.extended-work-wrapper {
+  margin: 0 5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.extended-work-item {
+  text-align: center;
+}
+
+.extended-work-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
 .not-found {
   min-height: 100vh;
   display: grid;
@@ -521,7 +543,7 @@ section {
     order: -1;
   }
 
-    .contact-wrapper {
+  .contact-wrapper {
     grid-template-columns: 1fr;
     gap: 5rem;
   }

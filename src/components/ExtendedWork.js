@@ -1,40 +1,75 @@
+import { useRef, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import SectionTitle from "./SectionTitle";
-import WorkItem from "./WorkItem";
+import { useGsapDownStagger } from "../hooks/gsap";
+import gsap from "gsap";
+
 
 const images = [
   {
+    id: 0,
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=flybondi.jpg&download=1",
+    route: "flybondi",
+  },
+  {
     id: 1,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=maradona.jpg&download=1",
-    title: "Mil vidas - TyC Sports",
-    category: "Records",
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=abuela.jpg&download=1",
+    route: "tiktok",
   },
   {
     id: 2,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=messi.jpg&download=1",
-    title: "Messi - chicos.net",
-    category: "TV Shows",
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=maradona.jpg&download=1",
+    route: "maradona",
   },
   {
     id: 3,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=abuela.jpg&download=1",
-    title: "Lo aprendí en TikTok",
-    category: "Boombox",
-  },
-  {
-    id: 4,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=flybondi.jpg&download=1",
-    title: "Flybondi Argentina",
-    category: "Records",
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=messi.jpg&download=1",
+    route: "messi",
   },
 ];
 
 const ExtendedWork = () => {
+  const navigate = useNavigate();
+
+  const li1 = useRef(null);
+  const li2 = useRef(null);
+  const li3 = useRef(null);
+  const li4 = useRef(null);
+  const liArr = [li1, li2, li3, li4];
+
+  useGsapDownStagger(liArr, 0.5);
+
+  useEffect(() => {
+    liArr.forEach((li) => {
+      const el = li.current;
+      gsap.set(el, { scale: 1, rotate: 0 });
+
+      el.addEventListener("mouseenter", () => {
+        gsap.to(el, { scale: 0.95, rotate: 3, duration: 0.5, ease: "power2.out" });
+      });
+
+      el.addEventListener("mouseleave", () => {
+        gsap.to(el, { scale: 1, rotate: 0, duration: 0.5, ease: "power2.out" });
+      });
+    });
+  }, [liArr]);
+
+  const handleOnClick = (e) => {
+    const image = e.target;
+    const id = images.findIndex((img) => img.src === image.src);
+    const route = images[id].route;
+
+    navigate(`/work/${route}`);
+  }
+
   return (
     <section className="work">
       <SectionTitle title="Work" />
-      <div className="work-wrapper">
+      <div className="extended-work-wrapper">
         {images.map((image) => (
-          <WorkItem key={image.id} {...image} />
+          <div key={image.id} className="extended-work-item" ref={liArr[image.id]}>
+            <img src={image.src} alt={image.title} onClick={handleOnClick} />
+          </div>
         ))}
       </div>
     </section>

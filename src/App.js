@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import ExtendedWork from "./components/ExtendedWork";
-import Favourites from "./components/Favourites";
+import Favourites from "./components/works/Favourites";
 import NotFound from "./components/NotFound";
 
 const App = () => {
@@ -20,10 +20,13 @@ const App = () => {
         <Route path="work" element={<ExtendedWork />} />
         <Route path="about" element={<About minHeight={minHeight} />} />
         <Route path="contact" element={<Contact minHeight={minHeight} />} />
-        <Route
-          path="favourites"
-          element={<Favourites minHeight={minHeight} />}
-        />
+
+        {/* WORKS */}
+        <Route path="work/flybondi" element={<Favourites minHeight={minHeight} />} />
+        <Route path="work/tiktok" element={<Favourites minHeight={minHeight} />} />
+        <Route path="work/maradona" element={<Favourites minHeight={minHeight} />} />
+        <Route path="work/messi" element={<Favourites minHeight={minHeight} />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
