@@ -35,26 +35,6 @@ const Hero = () => {
   return (
     <section className="hero wrapper" ref={heroRef}>
       <style>{style}</style>
-      {/*
-      idea instead of links:
-      (LET'S CONNECT)
-
-      ditulliojulian@gmail.com
-      +1 999 888 777
-      LINKEDIN (TRISTÁN)
-      LINKDIN (JULIÁN)
-      */}
-      {/* <ul className="links">
-        <li ref={li1}>
-          <Link to="work">Work</Link>
-        </li>
-        <li ref={li2}>
-          <Link to="about">About</Link>
-        </li>
-        <li ref={li3}>
-          <Link to="contact">Contact</Link>
-        </li>
-      </ul> */}
       <ul className="connect-links">
         <li ref={li1}>
           <h2>(LET'S CONNECT)</h2>
