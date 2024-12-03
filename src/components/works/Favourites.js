@@ -2,12 +2,9 @@ import SectionTitle from "../SectionTitle";
 import Blog from "../Blog";
 import { blogsArr } from "./blogs";
 
-const Favourites = ({ minHeight }) => {
+const Favourites = () => {
   return (
-    <section
-      className="favourites wrapper"
-      style={minHeight ? { minHeight: "100vh" } : null}
-    >
+    <section className="favourites wrapper">
       <SectionTitle title="Example Work" />
       <div className="blogs">
         {blogsArr.map((blog) => (

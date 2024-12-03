@@ -26,6 +26,11 @@ const images = [
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=messi.jpg&download=1",
     route: "messi",
   },
+  {
+    id: 4,
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=pelea.jpg&download=1",
+    route: "boxeo",
+  },
 ];
 
 const ExtendedWork = () => {
@@ -35,7 +40,8 @@ const ExtendedWork = () => {
   const li2 = useRef(null);
   const li3 = useRef(null);
   const li4 = useRef(null);
-  const liArr = [li1, li2, li3, li4];
+  const li5 = useRef(null);
+  const liArr = [li1, li2, li3, li4, li5];
 
   useGsapDownStagger(liArr, 0.5);
 

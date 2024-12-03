@@ -9,7 +9,6 @@ import Favourites from "./components/works/Favourites";
 import NotFound from "./components/NotFound";
 
 const App = () => {
-  const minHeight = true;
   useSmoothScroll();
 
   return (
@@ -18,14 +17,14 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="work" element={<ExtendedWork />} />
-        <Route path="about" element={<About minHeight={minHeight} />} />
-        <Route path="contact" element={<Contact minHeight={minHeight} />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
 
         {/* WORKS */}
-        <Route path="work/flybondi" element={<Favourites minHeight={minHeight} />} />
-        <Route path="work/tiktok" element={<Favourites minHeight={minHeight} />} />
-        <Route path="work/maradona" element={<Favourites minHeight={minHeight} />} />
-        <Route path="work/messi" element={<Favourites minHeight={minHeight} />} />
+        <Route path="work/flybondi" element={<Favourites />} />
+        <Route path="work/tiktok" element={<Favourites />} />
+        <Route path="work/maradona" element={<Favourites />} />
+        <Route path="work/messi" element={<Favourites />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
