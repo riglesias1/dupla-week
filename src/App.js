@@ -25,6 +25,7 @@ const App = () => {
         <Route path="work/tiktok" element={<Favourites />} />
         <Route path="work/maradona" element={<Favourites />} />
         <Route path="work/messi" element={<Favourites />} />
+        <Route path="work/boxeo" element={<Favourites />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

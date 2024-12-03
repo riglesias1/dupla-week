@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useMemo } from "react";
 import { useNavigate } from 'react-router-dom';
 import SectionTitle from "./SectionTitle";
 import { useGsapDownStagger } from "../hooks/gsap";
@@ -28,7 +28,7 @@ const images = [
   },
   {
     id: 4,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=pelea.jpg&download=1",
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=boxeo.jpg&download=1",
     route: "boxeo",
   },
 ];
@@ -41,8 +41,7 @@ const ExtendedWork = () => {
   const li3 = useRef(null);
   const li4 = useRef(null);
   const li5 = useRef(null);
-  const liArr = [li1, li2, li3, li4, li5];
-
+  const liArr = useMemo(() => [li1, li2, li3, li4, li5], []);
   useGsapDownStagger(liArr, 0.5);
 
   useEffect(() => {
