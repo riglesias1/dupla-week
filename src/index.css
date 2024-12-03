@@ -354,7 +354,7 @@ section {
   
   
   .person h3 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     margin-top: 1rem;
   }
   
@@ -365,9 +365,10 @@ section {
   }
   
   .info-person .description {
+    white-space: pre-line;
     font-weight: 500;
-    font-size: 1rem;
-    margin: 0.5rem 0;
+    font-size: 0.8rem;
+      margin: -1rem 0;
   }
   
   .info-person .role {
