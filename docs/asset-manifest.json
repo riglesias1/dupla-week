@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dupla-week/static/css/main.d647b4f0.css",
-    "main.js": "/dupla-week/static/js/main.e431c03b.js",
+    "main.css": "/dupla-week/static/css/main.45b9e30a.css",
+    "main.js": "/dupla-week/static/js/main.30b8f310.js",
     "index.html": "/dupla-week/index.html",
-    "main.d647b4f0.css.map": "/dupla-week/static/css/main.d647b4f0.css.map",
-    "main.e431c03b.js.map": "/dupla-week/static/js/main.e431c03b.js.map"
+    "main.45b9e30a.css.map": "/dupla-week/static/css/main.45b9e30a.css.map",
+    "main.30b8f310.js.map": "/dupla-week/static/js/main.30b8f310.js.map"
   },
   "entrypoints": [
-    "static/css/main.d647b4f0.css",
-    "static/js/main.e431c03b.js"
+    "static/css/main.45b9e30a.css",
+    "static/js/main.30b8f310.js"
   ]
 }
