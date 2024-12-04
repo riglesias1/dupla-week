@@ -45,14 +45,13 @@ body {
 }
 
 section {
-  padding: 8vw 0;
+  padding: 8vh 0;
 }
 
 .section-title {
   font-family: "Montserrat", sans-serif;
   font-size: 6rem;
-    font-weight: 700;
-  margin-top: -17vh;
+  font-weight: 700;
   text-align: center;
   text-transform: lowercase;
   padding-bottom: 2rem;
@@ -60,6 +59,9 @@ section {
 }
 
 .navbar {
+  position: absolute;
+  width: -webkit-fill-available;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -138,17 +140,22 @@ section {
   font-size: 8vw;
   line-height: 0.8;
   color: var(--text-dark);
-  min-height: calc(100svh - 13.3svh);
+  height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   position: relative;
 }
 
 .title {
+  position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
   font-family: "Montserrat", sans-serif;
   display: flex;
+  justify-content: center;
   text-transform: lowercase;
   text-align: center;
   width: 100%;
@@ -192,8 +199,14 @@ section {
   z-index: 2;
 }
 
+.loony-toons {
+  margin-right: 0.5em;
+  width: auto;
+  height: 60px;
+}
 .connect-links {
   display: flex;
+  text-transform: lowercase;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
@@ -210,6 +223,7 @@ section {
 
   h2 {
     color: white;
+    text-transform: uppercase;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -217,6 +231,7 @@ section {
 
   a,
   .connect-linkedin {
+    display: flex;
     color: white;
     font-size: 3rem;
     font-weight: 800;
