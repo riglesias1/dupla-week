@@ -41,20 +41,22 @@ const Hero = () => {
         </li>
         <li ref={li2}>
           <a href="mailto:ditulliojulian@gmail.com">
+            <img className="loony-toons" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=juli.png&download=1" alt="julian" />
             ditulliojulian@gmail.com
           </a>
           <div className="connect-linkedin scaleup">
-            <a href="https://www.linkedin.com/in/juli%C3%A1n-di-tullio-1325551b7" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/tristán-michael-o-shea-aa5a67225/" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>
         </li>
         <li ref={li3}>
-          <a href="mailto:tristanoshea@gmail.com">
-            tristanoshea@gmail.com
+          <a href="mailto:tristan.oshea01@gmail.com">
+            <img className="loony-toons" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=tristan.png&download=1" alt="julian" />
+            tristan.oshea01@gmail.com
           </a>
           <div className="connect-linkedin scaleup">
-            <a href="https://twitter.com/CristianMielu" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/julián-di-tullio-1325551b7/" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>

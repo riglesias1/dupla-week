@@ -7,7 +7,7 @@ const About = () => {
       name: "Tristán O'Shea",
       job: "Redactor",
       img: "https://placehold.co/350x400/0079fa/EEE?font=roboto&text=foto%20de%20tristan",
-      linkedin: "https://www.linkedin.com",
+      linkedin: "https://www.linkedin.com/in/tristán-michael-o-shea-aa5a67225/",
       description: `
         Siempre creí que las palabras tienen un poder único. No solo cuentan historias; conectan, despiertan ideas y, a veces, hasta cambian algo en quien las escucha. Soy Tristán, alguien que disfruta explorarlas, dándoles forma hasta encontrar esa chispa que las hace memorables.
 
@@ -21,7 +21,7 @@ const About = () => {
       name: "Julian Di Tullio",
       job: "Director de arte",
       img: "https://placehold.co/350x400/0079fa/EEE?font=roboto&text=foto%20de%20julian",
-      linkedin: "https://www.linkedin.com",
+      linkedin: "https://www.linkedin.com/in/julián-di-tullio-1325551b7/",
       description: `
         Para mí, cada proyecto es un espacio de experimentación, donde las ideas toman forma gracias a la combinación justa de creatividad, técnica y una mezcla de referencia recolectadas a lo largo de mis 24 años. Mi nombre es Julian, una persona curiosa que siempre esta en la búsqueda de nuevas herramientas y tendencias.
 
