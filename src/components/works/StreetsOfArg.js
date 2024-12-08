@@ -129,7 +129,6 @@ const StreetsOfArg = () => {
       />
 
       <Carousel
-        className="carrousel-margin"
         value={galleriesTwo}
         numVisible={galleriesTwo.length}
         numScroll={1}

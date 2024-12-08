@@ -32,7 +32,7 @@ export const allWorks = [
     {
         "id": 5,
         "title": "Spotify",
-        "src": "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2Fspoty.png&download=1",
+        "src": "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2Fspoty.jpg&download=1",
         "route": "/work/spotify"
     }
 ]
