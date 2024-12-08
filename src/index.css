@@ -49,10 +49,14 @@ section {
 }
 
 .section-title {
+  display: flex;
+    flex-direction: column;
   font-family: "Montserrat", sans-serif;
+  padding-top: 3rem;
   font-size: 6rem;
   font-weight: 700;
   text-align: center;
+  line-height: 6rem;
   text-transform: lowercase;
   padding-bottom: 2rem;
   color: var(--color-primary);
@@ -564,7 +568,7 @@ section {
 
 .others {
   background-color: black;
-  margin: 3rem -5vw -5vw;
+  margin: 3rem -5vw -6vw;
 }
 
 .others-wrapper {

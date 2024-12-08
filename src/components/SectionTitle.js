@@ -17,7 +17,7 @@ const SectionTitle = ({ title, subtitle = null, styleProps = [] }) => {
     <>
       <h6 className="section-title" style={optionalMarginStyles} ref={secTitle}>
         {title}
-        {subtitle && <h6 className="section-subtitle" ref={subTitle}>{subtitle}</h6>}
+        {subtitle && <span className="section-subtitle" ref={subTitle}>{subtitle}</span>}
       </h6>
     </>
   );

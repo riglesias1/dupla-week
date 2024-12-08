@@ -2,8 +2,7 @@ import { useRef } from "react";
 import { Link } from 'react-router-dom'
 import {
   useGsapDownStagger,
-  useGsapShutterUnveil,
-  useGsapAppear
+  useGsapShutterUnveil
 } from "../hooks/gsap";
 
 const Hero = () => {

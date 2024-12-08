@@ -23,7 +23,7 @@ export const useGsapDownStagger = (arr, delay = 0) => {
         ease: Expo.easeInOut,
       }
     );
-  }, []);
+  }, [arr, delay]);
 };
 
 export const useGsapUpward = (item, delay = 0) => {
@@ -44,7 +44,7 @@ export const useGsapUpward = (item, delay = 0) => {
         ease: Expo.easeInOut,
       }
     );
-  }, []);
+  }, [item, delay]);
 };
 
 export const useGsapAppear = (item, delay = 0, trig) => {
@@ -67,7 +67,7 @@ export const useGsapAppear = (item, delay = 0, trig) => {
         },
       }
     );
-  }, []);
+  }, [item, delay, trig]);
 }
 
 export const useGsapShutterUnveil = (item, delay = 0, trig = null) => {
@@ -91,7 +91,7 @@ export const useGsapShutterUnveil = (item, delay = 0, trig = null) => {
         },
       }
     );
-  }, []);
+  }, [item, delay, trig]);
 };
 
 export const useGsapLeftWalking = (item) => {
@@ -113,7 +113,7 @@ export const useGsapLeftWalking = (item) => {
         },
       }
     );
-  }, []);
+  }, [item]);
 };
 
 export const useGsapContactLeftShutter = (item, trig) => {
@@ -137,7 +137,7 @@ export const useGsapContactLeftShutter = (item, trig) => {
         },
       }
     );
-  }, []);
+  }, [item, trig]);
 };
 
 export const useGsapContactRightShutter = (item, trig) => {
@@ -162,7 +162,7 @@ export const useGsapContactRightShutter = (item, trig) => {
         },
       }
     );
-  }, []);
+  }, [item, trig]);
 };
 
 export const useGsapWorkImg = (item) => {
@@ -188,7 +188,7 @@ export const useGsapWorkImg = (item) => {
         },
       }
     );
-  }, []);
+  }, [item]);
 };
 
 export const useGsapWorkTitle = (item, trig) => {
@@ -212,7 +212,7 @@ export const useGsapWorkTitle = (item, trig) => {
         },
       }
     );
-  }, []);
+  }, [item, trig]);
 };
 
 export const useGsapWorkCategory = (item, trig) => {
@@ -236,7 +236,7 @@ export const useGsapWorkCategory = (item, trig) => {
         },
       }
     );
-  }, []);
+  }, [item, trig]);
 };
 
 export const useGsapFooterHeadline = (item, trig) => {
@@ -258,7 +258,7 @@ export const useGsapFooterHeadline = (item, trig) => {
         },
       }
     );
-  }, []);
+  }, [item, trig]);
 };
 
 export const useGsapNotFoundHeadline = (item, vw = "-100vw") => {
@@ -276,7 +276,7 @@ export const useGsapNotFoundHeadline = (item, vw = "-100vw") => {
         ease: Expo.easeInOut,
       }
     );
-  }, []);
+  }, [item, vw]);
 };
 
 export const useGsapNotFoundImg = (item) => {
@@ -297,7 +297,7 @@ export const useGsapNotFoundImg = (item) => {
         ease: "elastic",
       }
     );
-  }, []);
+  }, [item]);
 };
 
 export const useGsapPhotoScroller = (arr) => {
@@ -319,7 +319,7 @@ export const useGsapPhotoScroller = (arr) => {
         ease: Expo.easeInOut,
       }
     );
-  }, []);
+  }, [arr]);
 };
 
 export const useGsapPhotoLevitate = (arr, trig) => {
@@ -341,5 +341,5 @@ export const useGsapPhotoLevitate = (arr, trig) => {
         },
       }
     );
-  }, []);
+  }, [arr, trig]);
 };

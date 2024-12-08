@@ -8,22 +8,22 @@ import "./StreetsOfArg.css";
 const galleries = [
   {
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fbondi1.jpg&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fbondi1.jpg&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Fbondi1.jpg&download=1",
     alt: "bondi1"
   },
   {
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Fparada.jpg&download=1",
     alt: "parada"
   },
   {
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada2.jpg&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada2.jpg&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Fparada2.jpg&download=1",
     alt: "parada2"
   },
   {
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada3.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada3.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Fparada3.jpg&download=1",
     alt: "parada3"
   },
 ];
@@ -32,22 +32,22 @@ const galleries = [
 const galleriesTwo = [
   {
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito1.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito1.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Ftito1.jpg&download=1",
     alt: "tito1"
   },
   {
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito2.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito2.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Ftito2.jpg&download=1",
     alt: "tito2"
   },
   {
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito3.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito3.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Ftito3.jpg&download=1",
     alt: "tito3"
   },
   {
     src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito4.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito4.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Ftito4.jpg&download=1",
     alt: "tito4"
   },
 ];
@@ -58,8 +58,8 @@ const galleryTemplate = (image) => {
       <Image
         className="gallery-image"
         imageClassName="gallery-image"
-        src={image.src}
-        zoomSrc={image.thumbnail}
+        src={image.thumbnail}
+        zoomSrc={image.src}
         alt={image.alt}
         preview
       />
@@ -112,8 +112,8 @@ const StreetsOfArg = () => {
               <Image
                 className="grid-image"
                 imageClassName="grid-image"
-                src={gallery.src}
-                zoomSrc={gallery.thumbnail}
+                src={gallery.thumbnail}
+                zoomSrc={gallery.src}
                 alt={gallery.alt}
                 preview
               />
