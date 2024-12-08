@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useGsapFooterHeadline } from "../hooks/gsap";
 
-const Footer = () => {
+const Awards = () => {
   const footerRef = useRef(null);
   const footerHeadline1 = useRef(null);
   const footerHeadline2 = useRef(null);
@@ -29,4 +29,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Awards;
