@@ -10,7 +10,7 @@ const About = () => {
         <section className="persons">
           <p className="about-sub">(MEET US)</p>
           <div className="person">
-            <img src="https://placehold.co/350x400/0079fa/EEE?font=roboto&text=foto%20de%20tristan" alt="Tristán O'Shea" />
+            <img src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=About%2Fperfil-tristan.jpg&download=1" alt="Tristán O'Shea" />
             <div className="info-person">
               <div className="line">
                 <h3>Tristán O'Shea</h3>
@@ -36,7 +36,7 @@ const About = () => {
             </div>
           </div>
           <div className="person">
-            <img src="https://placehold.co/350x400/0079fa/EEE?font=roboto&text=foto%20de%20julian" alt="Julian Di Tullio" />
+            <img src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=About%2Fperfil-julian.jpg&download=1" alt="Julian Di Tullio" />
               <div className="info-person">
                 <div className="line">
                 <h3>Julian Di Tullio</h3>
@@ -63,8 +63,8 @@ const About = () => {
           </div>
           <p className="about-sub">(AWARDS)</p>
         </section>
+        <Awards />
       </section>
-      <Awards />
     </>
   );
 };

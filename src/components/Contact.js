@@ -45,7 +45,7 @@ const Hero = () => {
             ditulliojulian@gmail.com
           </a>
           <div className="connect-linkedin scaleup">
-            <a href="https://www.linkedin.com/in/tristán-michael-o-shea-aa5a67225/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/julián-di-tullio-1325551b7/" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>
@@ -56,7 +56,7 @@ const Hero = () => {
             tristan.oshea01@gmail.com
           </a>
           <div className="connect-linkedin scaleup">
-            <a href="https://www.linkedin.com/in/julián-di-tullio-1325551b7/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/tristán-michael-o-shea-aa5a67225/" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </div>
