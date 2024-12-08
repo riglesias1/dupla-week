@@ -2,36 +2,8 @@ import { useRef, useEffect, useMemo } from "react";
 import { useNavigate } from 'react-router-dom';
 import SectionTitle from "./SectionTitle";
 import { useGsapDownStagger } from "../hooks/gsap";
+import { allWorks } from "./works/works.js";
 import gsap from "gsap";
-
-
-const images = [
-  {
-    id: 0,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=flybondi.jpg&download=1",
-    route: "flybondi",
-  },
-  {
-    id: 1,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=abuela.jpg&download=1",
-    route: "tiktok",
-  },
-  {
-    id: 2,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=maradona.jpg&download=1",
-    route: "maradona",
-  },
-  {
-    id: 3,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=messi.jpg&download=1",
-    route: "messi",
-  },
-  {
-    id: 4,
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=boxeo.jpg&download=1",
-    route: "boxeo",
-  },
-];
 
 const ExtendedWork = () => {
   const navigate = useNavigate();
@@ -41,7 +13,8 @@ const ExtendedWork = () => {
   const li3 = useRef(null);
   const li4 = useRef(null);
   const li5 = useRef(null);
-  const liArr = useMemo(() => [li1, li2, li3, li4, li5], []);
+  const li6 = useRef(null);
+  const liArr = useMemo(() => [li1, li2, li3, li4, li5, li6], []);
   useGsapDownStagger(liArr, 0.5);
 
   useEffect(() => {
@@ -61,17 +34,17 @@ const ExtendedWork = () => {
 
   const handleOnClick = (e) => {
     const image = e.target;
-    const id = images.findIndex((img) => img.src === image.src);
-    const route = images[id].route;
+    const id = allWorks.findIndex((img) => img.src === image.src);
+    const route = allWorks[id].route;
 
-    navigate(`/work/${route}`);
+    navigate(route);
   }
 
   return (
-    <section className="work">
+    <section>
       <SectionTitle title="Work" />
       <div className="extended-work-wrapper">
-        {images.map((image) => (
+        {allWorks.map((image) => (
           <div key={image.id} className="extended-work-item" ref={liArr[image.id]}>
             <img src={image.src} alt={image.title} onClick={handleOnClick} />
           </div>

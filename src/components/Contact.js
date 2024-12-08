@@ -41,7 +41,7 @@ const Hero = () => {
         </li>
         <li ref={li2}>
           <a href="mailto:ditulliojulian@gmail.com">
-            <img className="loony-toons" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=juli.png&download=1" alt="julian" />
+            <img className="loony-toons" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=About%2Fjuli.png&download=1" alt="julian" />
             ditulliojulian@gmail.com
           </a>
           <div className="connect-linkedin scaleup">
@@ -52,7 +52,7 @@ const Hero = () => {
         </li>
         <li ref={li3}>
           <a href="mailto:tristan.oshea01@gmail.com">
-            <img className="loony-toons" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=tristan.png&download=1" alt="julian" />
+            <img className="loony-toons" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=About%2Ftristan.png&download=1" alt="julian" />
             tristan.oshea01@gmail.com
           </a>
           <div className="connect-linkedin scaleup">

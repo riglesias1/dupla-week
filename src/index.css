@@ -58,6 +58,15 @@ section {
   color: var(--color-primary);
 }
 
+.section-subtitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -2rem;
+  padding-bottom: 2rem;
+  color: var(--color-dark);
+}
 .navbar {
   position: absolute;
   width: -webkit-fill-available;
@@ -419,10 +428,6 @@ section {
   font-weight: 600;
 }
 
-.work {
-  padding-bottom: 0;
-}
-
 .work-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -471,7 +476,8 @@ section {
 .extended-work-wrapper {
   margin: 0 5vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 40svh;
   gap: 1rem;
 }
 
@@ -556,6 +562,56 @@ section {
   color: var(--color-darker);
 }
 
+.others {
+  background-color: black;
+  margin: 3rem -5vw -5vw;
+}
+
+.others-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 5vw;
+}
+
+.others-title {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-lighter);
+}
+
+.other-gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.other-gallery-item {
+  width: auto;
+  height: 100%;
+  margin: 0 0.5rem;
+}
+
+[data-pc-section="indicators"] {
+  margin-top: 1rem;
+
+  li {
+    background-color: black;
+    margin: 0 2px;
+
+    button {
+      border-radius: 13px;
+    }
+  }
+
+  [data-p-highlight="false"] {
+    button {
+      background-color: #f5f0ec3f;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   html {
     font-size: 50%;

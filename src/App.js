@@ -5,8 +5,9 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import ExtendedWork from "./components/ExtendedWork";
-import Favourites from "./components/works/Favourites";
-import NotFound from "./components/NotFound";
+import StreetsOfArg from "./components/works/StreetsOfArg";
+import El10 from "./components/works/El10";
+import Duolingo from "./components/works/Duolingo";
 
 const App = () => {
   useSmoothScroll();
@@ -21,13 +22,13 @@ const App = () => {
         <Route path="contact" element={<Contact />} />
 
         {/* WORKS */}
-        <Route path="work/flybondi" element={<Favourites />} />
-        <Route path="work/tiktok" element={<Favourites />} />
-        <Route path="work/maradona" element={<Favourites />} />
-        <Route path="work/messi" element={<Favourites />} />
-        <Route path="work/boxeo" element={<Favourites />} />
+        <Route path="work/streets-of-argentina" element={<StreetsOfArg />} />
+        <Route path="work/el-10" element={<El10 />} />
+        <Route path="work/duolingo" element={<Duolingo />} />
+        <Route path="work/tiktok" element={<StreetsOfArg />} />
+        <Route path="work/messi" element={<StreetsOfArg />} />
 
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </>
   );

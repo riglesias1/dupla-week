@@ -1,10 +1,92 @@
 import SectionTitle from "../SectionTitle";
+import { Link } from 'react-router-dom';
+import { Carousel } from "primereact/carousel";
+import { Image } from 'primereact/image';
+import { allWorks } from "./works.js";
 import "./StreetsOfArg.css";
+
+const galleries = [
+  {
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fbondi1.jpg&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fbondi1.jpg&download=1",
+    alt: "bondi1"
+  },
+  {
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada.png&download=1",
+    alt: "parada"
+  },
+  {
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada2.jpg&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada2.jpg&download=1",
+    alt: "parada2"
+  },
+  {
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada3.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada3.png&download=1",
+    alt: "parada3"
+  },
+];
+
+
+const galleriesTwo = [
+  {
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito1.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito1.png&download=1",
+    alt: "tito1"
+  },
+  {
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito2.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito2.png&download=1",
+    alt: "tito2"
+  },
+  {
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito3.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito3.png&download=1",
+    alt: "tito3"
+  },
+  {
+    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito4.png&download=1",
+    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito4.png&download=1",
+    alt: "tito4"
+  },
+];
+
+const galleryTemplate = (image) => {
+  return (
+    <div className="gallery-item">
+      <Image
+        className="gallery-image"
+        imageClassName="gallery-image"
+        src={image.src}
+        zoomSrc={image.thumbnail}
+        alt={image.alt}
+        preview
+      />
+    </div>
+  );
+}
+
+const othersInterestTemplate = (item) => {
+  return (
+    <div className="other-gallery-item">
+      <Link to={item.route}>
+        <Image
+          className="other-gallery-image"
+          imageClassName="other-gallery-image"
+          src={item.src}
+          alt={item.title}
+        />
+      </Link>
+    </div>
+  );
+}
+
 
 const StreetsOfArg = () => {
   return (
     <section className="wrapper">
-      <SectionTitle title="streets of argentina" />
+      <SectionTitle title="streets of argentina" subtitle="Flybondi" />
       <p className="soa-title">Contexto</p>
       <p className="soa-description">
         Flybondi, <b>la aerolínea más argentina</b>, que democratizó los vuelos dentro del país, ahora <b>abre sus alas a nuevos destinos internacionales</b>, países que tienen el mismo nombre de calles que recorren a diario los argentinos.
@@ -19,60 +101,65 @@ const StreetsOfArg = () => {
         Y con un micro documental contamos la historia de Tito, el del 24, que tras 13 años pasando por la calle Estados Unidos, finalmente pudo recorrer el verdadero, dejando el bondi estacionado.
       </p>
 
-      <iframe
-        src="https://archivos.dots.com.ar/wl/?id=svy6jl8Wr9evHVcJdbOkum1OD3jA2yHM&fmode=open"
-        height="700"
-        style={{ border: "none", width: "100%", marginTop: "4rem" }}
-        allowFullScreen
-        title="Streets of Argentina"
-      ></iframe>
+      <video width="100%" height="auto" controls lazy="true">
+        <source src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fflybondi.mp4&fmode=open" type="video/mp4" />
+      </video>
 
-      <div className="gallery">
-
-        <div className="gallery-item">
-          <img className="gallery-image" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fbondi1.jpg&download=1" />
-        </div>
-
-        <div className="gallery-item">
-          <img className="gallery-image" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada.png&download=1" />
-        </div>
-
-        <div className="gallery-item">
-          <img className="gallery-image" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada2.jpg&download=1" />
-        </div>
-
-        <div className="gallery-item">
-          <img className="gallery-image" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada3.png&download=1" />
-        </div>
-
+      <div className="grid-container">
+        {
+          galleries.map((gallery, index) => (
+            <div className={`grid-item item${index + 1}`} key={index}>
+              <Image
+                className="grid-image"
+                imageClassName="grid-image"
+                src={gallery.src}
+                zoomSrc={gallery.thumbnail}
+                alt={gallery.alt}
+                preview
+              />
+            </div>
+          ))
+        }
       </div>
 
-      <img className="posteo-red" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fposteos.jpg&download=1" />
+      <img
+        className="instagram-phone"
+        alt="Streets of Argentina"
+        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fposteos.jpg&download=1"
+      />
 
-      <div className="gallery-line">
-        <div className="gallery-item-line">
-          <img className="gallery-image-line" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito1.png&download=1" />
-        </div>
-        <div className="gallery-item-line">
-          <img className="gallery-image-line" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito2.png&download=1" />
-        </div>
-        <div className="gallery-item-line">
-          <img className="gallery-image-line" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito3.png&download=1" />
-        </div>
-        <div className="gallery-item-line">
-          <img className="gallery-image-line" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito4.png&download=1" />
-        </div>
-      </div>
+      <Carousel
+        className="carrousel-margin"
+        value={galleriesTwo}
+        numVisible={galleriesTwo.length}
+        numScroll={1}
+        itemTemplate={galleryTemplate}
+        showNavigators={false}
+        showIndicators={false}
+      />
 
-      <img className="posteo-red" src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fcierre.gif&mode=grid&download=1" />
+      <img
+        className="gif-streets"
+        alt="Streets of Argentina"
+        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fcierre.gif&mode=grid&download=1"
+      />
 
       <p className="soa-footer">
         Proyecto para taller de redacción en Brother Buenos Aires.
       </p>
 
-
-
-
+      <section className="others">
+        <SectionTitle title="otros que te pueden interesar" />
+        <div className="others-wrapper">
+          <Carousel
+            className="carrousel-margin"
+            value={allWorks.filter(work => !work.route.includes("streets-of-argentina"))}
+            numVisible={3}
+            numScroll={1}
+            itemTemplate={othersInterestTemplate}
+          />
+        </div>
+      </section>
 
     </section>
   );
