@@ -8,6 +8,7 @@ import ExtendedWork from "./components/ExtendedWork";
 import StreetsOfArg from "./components/works/StreetsOfArg";
 import El10 from "./components/works/El10";
 import Duolingo from "./components/works/Duolingo";
+import Messi from "./components/works/Messi";
 
 const App = () => {
   useSmoothScroll();
@@ -25,8 +26,9 @@ const App = () => {
         <Route path="work/streets-of-argentina" element={<StreetsOfArg />} />
         <Route path="work/el-10" element={<El10 />} />
         <Route path="work/duolingo" element={<Duolingo />} />
+        <Route path="work/messi" element={<Messi />} />
         <Route path="work/tiktok" element={<StreetsOfArg />} />
-        <Route path="work/messi" element={<StreetsOfArg />} />
+        <Route path="work/spotify" element={<StreetsOfArg />} />
 
         <Route path="*" element={<Home />} />
       </Routes>
