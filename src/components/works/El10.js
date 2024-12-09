@@ -99,7 +99,6 @@ const El10 = () => {
         <SectionTitle title="otros que te pueden interesar" />
         <div className="others-wrapper">
           <Carousel
-            className="carrousel-margin"
             value={allWorks.filter(work => !work.route.includes("el-10"))}
             numVisible={3}
             numScroll={1}

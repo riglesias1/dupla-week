@@ -9,12 +9,12 @@
   --text-darker: #020202;
 }
 
-.soa-title {
+.tiktok-title {
   color: var(--color-primary);
   font-size: 1.8rem;
 }
 
-.soa-description {
+.tiktok-description {
   text-align: left;
   font-size: 1.5rem;
   line-height: 1.7;
@@ -22,76 +22,6 @@
   margin: 1rem 0;
 }
 
-.instagram-phone {
+.instagram-phone-tiktok {
   width: 100%;
-}
-
-.gif-streets {
-  width: 100%;
-}
-
-.soa-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-  font-size: 1.5rem;
-  color: var(--color-dark);
-}
-
-.gallery-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.gallery-item {
-  width: auto;
-  height: 100%;
-}
-
-.grid-container {
-  display: grid;
-  height: 100svh;
-    grid-template-areas:
-      "item1 item1 item2"
-      "item3 item4 item4";
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-    padding: 16px;
-}
-
-.grid-item {
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  span {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.grid-item img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.item1 {
-  grid-area: item1;
-}
-
-.item2 {
-  grid-area: item2;
-}
-
-.item3 {
-  grid-area: item3;
-}
-
-.item4 {
-  grid-area: item4;
 }

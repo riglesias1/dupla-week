@@ -86,73 +86,59 @@ const othersInterestTemplate = (item) => {
 const Tiktok = () => {
   return (
     <section className="wrapper">
-      <SectionTitle title="Lo aprendi en TikTok" subtitle="Tiktok" />
-      <p className="soa-title">Contexto</p>
-      <p className="soa-description">
-        Flybondi, <b>la aerolínea más argentina</b>, que democratizó los vuelos dentro del país, ahora <b>abre sus alas a nuevos destinos internacionales</b>, países que tienen el mismo nombre de calles que recorren a diario los argentinos.
+      <SectionTitle title="Lo aprendí en TikTok" subtitle="Tiktok" />
+      <p className="tiktok-title">Contexto</p>
+      <p className="tiktok-description">
+        TikTok tiene 1.690 millones de usuarios, pero mucha gente no se la descarga porque cree que el contenido es una pérdida de su tiempo. La perciben como un espacio de contenido superficial, desconectado de lo que realmente los apasiona.
       </p>
-      <br />
-      <p className="soa-title">Idea</p>
-      <p className="soa-description">
-        Usamos cada calle como un medio para comunicar que ahora no solo el 24 te deja en EEUU o el 120 en Canadá y así con muchas otras; transformando los recorridos diarios en <b>nuevos destinos</b>.
+      <p className="tiktok-title">Observación</p>
+      <p className="tiktok-description">
+        Sin importar tu edad, género o cuán inusuales sean tus intereses, TikTok es un lugar donde podés aprender a potenciar tus pasiones. La plataforma ofrece contenido educativo que permite llevar tus habilidades al siguiente nivel.
       </p>
-      <p className="soa-description">
-        Además para este gran lanzamiento <b>enviamos a choferes</b> que llevan años recorriendo estos  países dentro de Argentina en Bondi para generar ruido y contenido en las redes.
-        Y con un micro documental contamos la historia de Tito, el del 24, que tras 13 años pasando por la calle Estados Unidos, finalmente pudo recorrer el verdadero, dejando el bondi estacionado.
+      <p className="tiktok-title">Ejecución</p>
+      <p className="tiktok-description">
+        "Lo Aprendí en TikTok" es una campaña gráfica que muestra a personas realizando actividades inesperadas, acompañado de una cifra de videos disponibles sobre el tema. Así, transformamos la percepción de la plataforma, resaltando que en TikTok cualquier pasión puede encontrar su espacio.
       </p>
-
-      <video width="100%" height="auto" controls lazy="true">
-        <source src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fflybondi.mp4&fmode=open" type="video/mp4" />
-      </video>
-
-      <div className="grid-container">
-        {
-          galleries.map((gallery, index) => (
-            <div className={`grid-item item${index + 1}`} key={index}>
-              <Image
-                className="grid-image"
-                imageClassName="grid-image"
-                src={gallery.thumbnail}
-                zoomSrc={gallery.src}
-                alt={gallery.alt}
-                preview
-              />
-            </div>
-          ))
-        }
-      </div>
 
       <img
-        className="instagram-phone"
-        alt="Streets of Argentina"
-        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fposteos.jpg&download=1"
-      />
-
-      <Carousel
-        value={galleriesTwo}
-        numVisible={galleriesTwo.length}
-        numScroll={1}
-        itemTemplate={galleryTemplate}
-        showNavigators={false}
-        showIndicators={false}
+        className="instagram-phone-tiktok"
+        alt="Tiktok"
+        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FTiktok%2Fvp.jpg&download=1"
       />
 
       <img
-        className="gif-streets"
-        alt="Streets of Argentina"
-        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fcierre.gif&mode=grid&download=1"
+        className="instagram-phone-tiktok"
+        alt="Tiktok2"
+        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FTiktok%2Fvp2.jpg&download=1"
+      />
+
+      <img
+        className="instagram-phone-tiktok"
+        alt="Tiktok3"
+        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FTiktok%2Fvp3.jpg&download=1"
+      />
+
+      <img
+        className="instagram-phone-tiktok"
+        alt="Tiktok footer1"
+        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FTiktok%2Ffooter1.jpg&download=1"
+      />
+
+      <img
+        className="instagram-phone-tiktok"
+        alt="Tiktok footer2"
+        src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FTiktok%2Ffooter2.jpg&download=1"
       />
 
       <p className="soa-footer">
-        Proyecto para taller de redacción en Brother Buenos Aires.
+        Proyecto para creatividad integral en Brother Buenos Aires.
       </p>
 
       <section className="others">
         <SectionTitle title="otros que te pueden interesar" />
         <div className="others-wrapper">
           <Carousel
-            className="carrousel-margin"
-            value={allWorks.filter(work => !work.route.includes("streets-of-argentina"))}
+            value={allWorks.filter(work => !work.route.includes("tiktok"))}
             numVisible={3}
             numScroll={1}
             itemTemplate={othersInterestTemplate}
