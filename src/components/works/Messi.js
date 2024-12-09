@@ -62,10 +62,10 @@ const galleriesTwo = [
 
 const galleryTemplate = (image) => {
   return (
-    <div className="gallery-item">
+    <div className="gallery-item-messi">
       <Image
-        className="gallery-image"
-        imageClassName="gallery-image"
+        className="gallery-image-messi"
+        imageClassName="gallery-image-messi"
         src={image.thumbnail}
         zoomSrc={image.src}
         alt={image.alt}
@@ -103,15 +103,12 @@ const Messi = () => (
               <SectionTitle title="Apostá en vos" subtitle="Chicos.net" />
               <p className="mess-title">Contexto</p>
               <p className="mess-description">
-                Flybondi, <b>la aerolínea más argentina</b>, que democratizó los vuelos dentro del país, ahora <b>abre sus alas a nuevos destinos internacionales</b>, países que tienen el mismo nombre de calles que recorren a diario los argentinos.
+                Las apuestas están afectando el desarrollo de los adolescentes, con muchos comenzando a apostar desde los 12 años, a pesar de ser ilegal para menores de 18. Esta adicción impacta su vida diaria: afecta su desempeño en el colegio, deteriora su salud mental y genera problemas en sus familias.
               </p>
               <br />
-              <p className="mess-title">Idea</p>
+              <p className="mess-title">Insight</p>
               <p className="mess-description">
-                Usamos cada calle como un medio para comunicar que ahora no solo el 24 te deja en EEUU o el 120 en Canadá y así con muchas otras; transformando los recorridos diarios en <b>nuevos destinos</b>.
-              </p>
-              <p className="mess-description">
-                Además para este gran lanzamiento <b>enviamos a choferes</b> que llevan años recorriendo estos  países dentro de Argentina en Bondi para generar ruido y contenido en las redes.
+                Los jóvenes siguen los pasos de sus ídolos: cómo visten, lo que hacen, lo que usan. Son sus modelos a seguir. Por eso mismo pensamos en contarles con gráficas las historias de sus ídolos, quienes tuvieron que sacrificar cosas de sus infancias, apostando todo en ellos mismos.
               </p>
             </section>
           </div>
@@ -124,10 +121,10 @@ const Messi = () => (
           </div>
           <div className="section">
             <section className="wrapper">
-              <div className="grid-container">
+              <div className="grid-container-messi">
                 {
                   galleries.map((gallery, index) => (
-                    <div className={`grid-item item${index + 1}`} key={index}>
+                    <div className={`grid-item-messi item${index + 1}`} key={index}>
                       <Image
                         className="grid-image"
                         imageClassName="grid-image"

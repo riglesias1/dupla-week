@@ -9,16 +9,12 @@
   --text-darker: #020202;
 }
 
-.fp-watermark {
-  display: none;
-}
-
-.mess-title {
+.soa-title {
   color: var(--color-primary);
   font-size: 1.8rem;
 }
 
-.mess-description {
+.soa-description {
   text-align: left;
   font-size: 1.5rem;
   line-height: 1.7;
@@ -26,7 +22,15 @@
   margin: 1rem 0;
 }
 
-.mess-footer {
+.instagram-phone {
+  width: 100%;
+}
+
+.gif-streets {
+  width: 100%;
+}
+
+.soa-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,31 +39,29 @@
   color: var(--color-dark);
 }
 
-
-.gallery-image-messi {
+.gallery-image {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  margin: 0 1px;
 }
 
-.gallery-item-messi {
+.gallery-item {
   width: auto;
   height: 100%;
 }
 
-.grid-container-messi {
+.grid-container {
   display: grid;
-  height: 84svh;
-  grid-template-areas:
-    "item1 item2 item3"
-    "item4 item4 item5";
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
-  padding: 16px;
+  height: 100svh;
+    grid-template-areas:
+      "item1 item1 item2"
+      "item3 item4 item4";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 16px;
 }
 
-.grid-item-messi {
+.grid-item {
   background-color: #f4f4f4;
   border-radius: 8px;
   overflow: hidden;
@@ -71,7 +73,7 @@
   }
 }
 
-.grid-item-messi img {
+.grid-item img {
   width: 100%;
   height: 100%;
   display: block;
@@ -92,8 +94,4 @@
 
 .item4 {
   grid-area: item4;
-}
-
-.item5 {
-  grid-area: item5;
 }

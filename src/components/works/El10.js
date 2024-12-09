@@ -30,10 +30,10 @@ const galleries = [
 
 const galleryTemplate = (image) => {
   return (
-    <div className="gallery-item">
+    <div className="gallery-item-10">
       <Image
-        className="gallery-image"
-        imageClassName="gallery-image"
+        className="gallery-image-10"
+        imageClassName="gallery-image-10"
         src={image.thumbnail}
         zoomSrc={image.src}
         alt={image.alt}
@@ -46,11 +46,11 @@ const galleryTemplate = (image) => {
 
 const othersInterestTemplate = (item) => {
   return (
-    <div className="other-gallery-item">
+    <div className="other-gallery-item-10">
       <Link to={item.route}>
         <Image
-          className="other-gallery-image"
-          imageClassName="other-gallery-image"
+          className="other-gallery-image-10"
+          imageClassName="other-gallery-image-10"
           src={item.src}
           alt={item.title}
         />

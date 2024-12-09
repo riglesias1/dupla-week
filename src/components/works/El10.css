@@ -22,18 +22,14 @@
   margin: 1rem 0;
 }
 
-.posteo-red {
-  width: 100%;
-}
 
-
-.gallery-image {
+.gallery-image-10 {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
-.gallery-item {
+.gallery-item-10 {
   width: auto;
   height: 100%;
 }
