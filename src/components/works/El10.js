@@ -46,11 +46,11 @@ const galleryTemplate = (image) => {
 
 const othersInterestTemplate = (item) => {
   return (
-    <div className="other-gallery-item-10">
+    <div className="other-gallery-item">
       <Link to={item.route}>
         <Image
-          className="other-gallery-image-10"
-          imageClassName="other-gallery-image-10"
+          className="other-gallery-image"
+          imageClassName="other-gallery-image"
           src={item.src}
           alt={item.title}
         />

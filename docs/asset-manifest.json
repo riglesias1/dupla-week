@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dupla-week/static/css/main.9f976754.css",
-    "main.js": "/dupla-week/static/js/main.e03b32f0.js",
+    "main.js": "/dupla-week/static/js/main.dd7486c8.js",
     "static/media/InterVariable-Italic.woff2": "/dupla-week/static/media/InterVariable-Italic.e295f70fe3e2df296c7b.woff2",
     "static/media/InterVariable.woff2": "/dupla-week/static/media/InterVariable.a0e477f2f1f9d2376fde.woff2",
     "index.html": "/dupla-week/index.html",
     "main.9f976754.css.map": "/dupla-week/static/css/main.9f976754.css.map",
-    "main.e03b32f0.js.map": "/dupla-week/static/js/main.e03b32f0.js.map"
+    "main.dd7486c8.js.map": "/dupla-week/static/js/main.dd7486c8.js.map"
   },
   "entrypoints": [
     "static/css/main.9f976754.css",
-    "static/js/main.e03b32f0.js"
+    "static/js/main.dd7486c8.js"
   ]
 }
