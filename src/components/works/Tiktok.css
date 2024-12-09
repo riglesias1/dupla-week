@@ -25,3 +25,17 @@
 .instagram-phone-tiktok {
   width: 100%;
 }
+
+.tiktok-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  color: var(--color-dark);
+}
+
+.tiktok-footer.withoutmargin {
+  margin: 0;
+}

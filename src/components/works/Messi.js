@@ -152,7 +152,7 @@ const Messi = () => (
 
 
               <p className="mess-footer">
-                Proyecto para taller de redacción en Brother Buenos Aires.
+                Proyecto presentado para los premios Obrar Estudiante 2024.
               </p>
             </section>
           </div>

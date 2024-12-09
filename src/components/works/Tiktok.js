@@ -5,67 +5,6 @@ import { Image } from 'primereact/image';
 import { allWorks } from "./works.js";
 import "./Tiktok.css";
 
-const galleries = [
-  {
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fbondi1.jpg&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Fbondi1.jpg&download=1",
-    alt: "bondi1"
-  },
-  {
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Fparada.jpg&download=1",
-    alt: "parada"
-  },
-  {
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada2.jpg&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Fparada2.jpg&download=1",
-    alt: "parada2"
-  },
-  {
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fparada3.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Fparada3.jpg&download=1",
-    alt: "parada3"
-  },
-];
-
-
-const galleriesTwo = [
-  {
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito1.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Ftito1.jpg&download=1",
-    alt: "tito1"
-  },
-  {
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito2.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Ftito2.jpg&download=1",
-    alt: "tito2"
-  },
-  {
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito3.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Ftito3.jpg&download=1",
-    alt: "tito3"
-  },
-  {
-    src: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Ftito4.png&download=1",
-    thumbnail: "https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FFlybondi%2Fthumbnalis%2Ftito4.jpg&download=1",
-    alt: "tito4"
-  },
-];
-
-const galleryTemplate = (image) => {
-  return (
-    <div className="gallery-item">
-      <Image
-        className="gallery-image"
-        imageClassName="gallery-image"
-        src={image.thumbnail}
-        zoomSrc={image.src}
-        alt={image.alt}
-        preview
-      />
-    </div>
-  );
-}
 
 const othersInterestTemplate = (item) => {
   return (
@@ -130,7 +69,15 @@ const Tiktok = () => {
         src="https://archivos.dots.com.ar/wl/?id=eh46iwnUqSwE06PrxQZEzkBKVMCHcOIh&path=Works%2FTiktok%2Ffooter2.jpg&download=1"
       />
 
-      <p className="soa-footer">
+      <p className="tiktok-footer withoutmargin">
+        <b>Dirección de arte: </b> Di Tullio Julián - Szapiro Carolina - Zeiler Yesica
+      </p>
+
+      <p className="tiktok-footer withoutmargin">
+        <b> Redacción: </b> O'Shea Tristán
+      </p>
+
+      <p className="tiktok-footer">
         Proyecto para creatividad integral en Brother Buenos Aires.
       </p>
 

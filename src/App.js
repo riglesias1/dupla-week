@@ -10,6 +10,7 @@ import El10 from "./components/works/El10";
 import Duolingo from "./components/works/Duolingo";
 import Messi from "./components/works/Messi";
 import Tiktok from "./components/works/Tiktok";
+import Spotify from "./components/works/Spotify";
 
 const App = () => {
   useSmoothScroll();
@@ -29,7 +30,7 @@ const App = () => {
         <Route path="work/duolingo" element={<Duolingo />} />
         <Route path="work/messi" element={<Messi />} />
         <Route path="work/tiktok" element={<Tiktok />} />
-        <Route path="work/spotify" element={<StreetsOfArg />} />
+        <Route path="work/spotify" element={<Spotify />} />
 
         <Route path="*" element={<Home />} />
       </Routes>
